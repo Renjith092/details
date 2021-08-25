@@ -1,0 +1,6 @@
+// This code uses the Sheets Advanced Service, but for most use cases
+// the built-in method SpreadsheetApp.create() is more appropriate.
+var sheet = Sheets.newSpreadsheet();
+sheet.properties = Sheets.newSpreadsheetProperties();
+sheet.properties.title = title;
+var spreadsheet = Sheets.Spreadsheets.create(sheet);
